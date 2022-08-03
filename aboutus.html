@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<meta charset ="UTF-8">
+	<title>online fish order and delivery system </title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type ="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	
+<style>
+    .tram{
+        padding-top: 50px;
+
+    }
+    .tram .col-3{
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+    }
+    .tram .col-3 img{
+        width: 100px;
+        margin-top: 50px;
+        border-radius: 20px;
+
+    }
+    .bubbles img{
+      width: 50px;
+      animation: bubble 7s linear infinite;
+    }
+    .bubbles{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      bottom: -70PX;
+    }
+    @keyframes bubble {
+      0%{
+        transform: translateY(0);
+        opacity: 0;
+      }
+      50%{
+        opacity: 1;
+      }
+      70%{
+      
+        opacity: 1;
+      }
+      100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+      }
+      
+    }
+    .bubbles img:nth-child(1){
+      animation-delay: 1S;
+
+    }
+    .bubbles img:nth-child(2){
+      animation-delay: 5S;
+
+    }
+    .bubbles img:nth-child(3){
+      animation-delay: 7S;
+
+    }
+    .bubbles img:nth-child(4){
+      animation-delay: 3S;
+
+    }
+    .bubbles img:nth-child(5){
+      animation-delay: 4.5S;
+
+    }
+    .bubbles img:nth-child(6){
+      animation-delay: 6S;
+
+    }
+    .bubbles img:nth-child(7){
+      animation-delay: 2S;
+
+    }
+</style>
+</head>
+<body onload="slider()">
+<div class="header">
+  <div class="container">
+		<div class=" banner">
+		 <div class="slider">
+		 <img src="image\bg3.jpg" id="slideImg">
+		</div>
+		<div class="overlay">
+		<div class="navbar">
+			<div class="logo">
+		  <img src="image\logo1.jpg" width="125px">
+		 
+			</div>
+			<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+					<li><a href="product.php">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="login.php">Account</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+          <li class="cart">
+            <a href="myaddcart.php" >
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart<span>0</span>
+            </a></li>
+            </ul>
+            </nav>
+			</div>
+      <div class="bubbles">
+        <img src="image\bubble.png" >
+        <img src="image\bubble.png" >
+        <img src="image\bubble.png" >
+        <img src="image\bubble.png" >
+        <img src="image\bubble.png" >
+        <img src="image\bubble.png" >
+        <img src="image\bubble.png" >
+      </div>
+			<div class="content">
+			<h1>About Us</h1>
+			<h3>This website prefer purchasing and delivery the fresh fish whereas the customer will be the end user.
+                 For customer to avoid going at crowded Places. To provide fresh fish to customer. 
+                 This website can provide variety of seafood Customer can buy whole fish or can also provide
+                  by pieces. Provide the searching facility based on various factors. Such as item category, 
+                  delivery address, order. It’s also provide recipe regrading fish. To make fish available
+                   to the customer at the right time and right place. This website will be benefit for both 
+                   fisherman and customer.
+
+            <div><br>
+             <a href="#ourteam"> 
+		       	<button type="button" class="btn"><a href="#ourteam"> Read More </a></button>
+             </a>
+            </div>
+		
+		</div>
+    
+
+    </div>
+		</div>
+      </div>
+    </div>
+   </div>
+   <!----ourteam--->
+      <div class="tram">
+          <div class="small-container">
+              <h1 class="title" id="ourteam">Our Team Details</h1>
+              <div class="row">
+                  <div class="col-3">
+                      <h2>Sales managers</h2>
+                      <p>
+                        "Sales Manager is a brain
+                     child of people expert in understanding the needs of the small and medium businesses.
+                      A sales manager is someone who is responsible for of sales in an organization."
+                      </p>
+                      <img src="image\avatar.jpg">
+                      <h3>Name 1</h3>
+                  </div>
+                  <div class="col-3">
+                    <h2>Marketing head</h2>
+                    <p>
+                      "Marketing is typically responsible for selecting and managing the agencies and 
+                      vendors who produce marketing materials and or/provide marketing support"
+                    </p><br>
+                    <img src="image\avatar1.jpg">
+                    <h3>Name 2</h3>
+                </div>
+                <div class="col-3">
+                    <h2>Designing Department head</h2>
+                    <p>
+                      "A design team can be made up of one designer or a group 
+                      of designers who play different roles"
+                    </p><br>
+                    <img src="image\avatar2.jpg">
+                    <h3>Name 3</h3>
+                </div>
+              </div>
+          </div>
+      </div>
+      <!--------footer------>
+ <div class="footer">
+    <div class="container">
+	   <div class="row">
+	     <div class="footer-col-1">
+		 <h3> Download Our App</h3>
+		 <p>download app for android mobile phone</p>
+		 <div class="app-logo">
+		    <img src="image\applogo2.png">
+			<img src="image\applogo1.png">
+	     </div>
+		 </div>
+	     <div class="footer-col-2">
+		   <img src="image\logo1.jpg">
+		 <p>India's No. 1 in Fresh 
+		  & Natural Fish and Meat. <br>Delicious & 0% Chemical. 
+		  Order Online Now. <br> Loin-cuts, Cubes, Fillets, 
+		  Cleaned, Curry-cut, Whole</p>
+		 </div>
+		 <div class="footer-col-3">
+		    <h3> Useful links</h3>
+			<ul>
+			<li>Why freshfish?</li>
+            <li>Refer and Earn</li>
+            <li>Careers</li>
+            <li>BLOG</li>
+			</ul>
+		 </div>
+		
+		 <div class="footer-col-4">
+		    <h3> Follow us on</h3>
+			<ul>
+			<li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter </li>
+            <li>Youtube</li>
+			</ul>
+		 </div>
+	   </div>
+	   <hr>
+	   <p class="copyright">&#169; copyright 2020 - Shop Fresh fish</p>
+	  </div>
+	   
+	</div>
+ </div>
+      
+</body>
+</HTML>
+   

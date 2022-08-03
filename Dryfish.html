@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<meta charset ="UTF-8">
+	<title>online fish order and delivery system </title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar{
+	display: flex ;
+	align-items: center;
+	padding: 10px;
+}
+body{
+padding: 10px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right:20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+h1 {
+   font-size: 50px;
+   text-align: center;
+   font-family: monospace, serif, sans-serif;
+}
+body {
+   background-color: #f1f1f1;
+   padding: 20px;
+   font-family: Arial;
+}
+main {
+   max-width: 1000px;
+   margin: auto;
+}
+.img {
+   width: 100%;
+   cursor: pointer;
+   
+}
+.portfolioContainer {
+   margin: 8px -16px;
+}
+.portfolioContainer,
+.portfolioContainer  .ImageCol {
+   padding: 8px;
+}
+.ImageCol {
+   float: left;
+   width: 25%;
+}
+.portfolioContainer:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+.portfolioContent {
+   background-color: white;
+   padding: 10px;
+}
+@media screen and (max-width: 900px) {
+.ImageCol {
+   width: 50%;
+}
+}
+@media screen and (max-width: 600px) {
+.ImageCol {
+   width: 100%;
+}
+}
+.portfolioContent{
+	transform: transform 0.5s;
+	}
+.portfolioContent:hover{
+	transform: translateY(-7px);
+}
+.Products{
+  display:block;
+color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+section ul{
+display: flex;
+margin-bottom: 10px;
+}
+section ul li{
+list-style: none;
+background: #eee;
+padding:8px 20px;
+margin: 5px;
+letter-spacing: 1px;
+cursor: pointer;
+}
+section ul li.active{
+background: #03a9f4;
+color: #fff;
+}
+/* The "show" class is added to the filtered elements */
+.Products {
+  display: block;
+}
+/* Style the buttons */
+.list {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.list:hover {
+  background-color: #ddd;
+}
+
+.list.active {
+  background-color: #666;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<!---header---->
+<div class="header">
+    <div class="container">
+	 <div class=" navbar">
+			<div class="logo">
+		     <img src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\logo1.jpg" width="125px">
+	        </div>
+			<nav>
+			<ul>
+				<li><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\home.html">Home</a></li>
+					<li><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\product.html">Products</a></li>
+					<li><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\contact.html">Contact</a></li>
+					<li><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\login.htmml">Account</a></li>
+					<li><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\aboutus.html">About Us</a></li>
+			</ul>
+			</nav>
+			<img src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\cart.png" width="30px" height="30px">
+     </div>
+	</div>		
+      
+ </div>
+<!---allproduct----->
+<h1 class="title"> All Products</h1>
+<div data-role="main" class="ui-content" >
+	<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="search">
+		<li><a href="#">White Pomfret</a></li>
+		<li><a href="#">Bata fish</a></li>
+		<li><a href="#">Rohu Fish</a></li>
+		<li><a href="#">seabass</a></li>
+		<li><a href="#">Sea White Prawns</a></li>
+		<li><a href="#">Tiger Prawn </a></li>
+		<li><a href="#">Freshwater Prawns</a></li>
+		<li><a href="#">Jhinga</a></li>
+		<li><a href="#">Witch Shrimp</a></li>
+		<li><a href="#">Dried Big Squid</a></li>
+		<li><a href="#">Tread Fin Bream Dried Fish</a></li>
+		<li><a href="#">Dried Tiny Shrimps</a></li>
+		<li><a href="#">Dried Bombay Duck</a></li>
+		<li><a href="#">fried red snapper</a></li>
+		<li><a href="#">Prawn Fish Fry</a></li>
+		<li><a href="#">Tawa Pomfret</a></li>
+		<li><a href="#">Bombay duck rawa fry</a></li>
+		<li><a href="#">Black Pomfret</a></li>
+		<li><a href="#">Double Dotted Queen Fish</a></li>
+		<li><a href="#">Seer</a></li>
+		<li><a href="#">HeadPearl Spot</a></li>
+		<li><a href="#">Karimeen</a></li>
+		<li><a href="#">Catfish eggs</a></li>
+		<li><a href="#">Salmon Roe</a></li>
+		<li><a href="#">Seer Fish eggs</a></li>
+		<li><a href="#">Sail Fish Egg</a></li>
+		<li><a href="#">King Size Lobster</a></li>
+		<li><a href="#">Lobster Fish</a></li>
+		<li><a href="#">Brown Fresh Sea Lobsters</a></li>
+		<li><a href="#">Rock Lobster</a></li>
+	</ul><br><br>
+<div data-role="controlgroup" data-type="horizontal" id="myBtnContainer">
+		<button class="list active"><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\product.html">All Products </a></button>
+		<button class="list" ><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\Rawfish.html">Rawfish </a> </button>
+		<button class="list" ><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\Prawns.html">Prawns </a></button>
+		<button class="list" ><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\Dryfish.html">Dryfish </a></button>
+		<button class="list" ><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\Fryfish.html">Fryfish </a></button>
+		<button class="list" ><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\Fish-cut-in-pieces.html">Fish-cut-in-pieces </a></button>
+		<button class="list" ><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\Fish-Eggs.html">Fish-Eggs </a></button>
+		<button class="list" ><a href="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\code\Lobster.html">Lobster</a></button>
+		
+</div>	
+<!---dryfish-->
+<div class="portfolioContainer">
+<div class="ImageCol Dryfish" >
+<div class="portfolioContent" >
+<img class="img" src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\dryfish1.jpg" />
+<h3>Dried Big Squid</h3>
+<p>Dried Big Size Squid, Sun dried and salted,<br><br><br>
+MRP:Rs 439.00</p><br>
+<button class="btn1 buy" type="button"> Add to cart </button>
+</div>
+</div>
+<div class="ImageCol Dryfish">
+<div class="portfolioContent">
+<img class="img" src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\dryfish2.jpg" />
+<h3>Tread Fin Bream Dried Fish</h3>
+<p> Tread Fin Bream or Yellow Belly Tread Fin sun dried fish.
+<br><br><br>
+ MRP:Rs 200.00</p><br>
+<button class="btn1 buy" type="button"> Add to cart </button>
+</div>
+</div>
+<div class="ImageCol Dryfish">
+<div class="portfolioContent">
+<img class="img" src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\dryfish3.jpg" />
+<h3>Dried Tiny Shrimps</h3>
+<p>Tiny Shrimps, freshly harvested and sun dried on board vessels.
+<br><br><br>
+  MRP:Rs 169.00</p><br>
+<button class="btn1 buy" type="button"> Add to cart </button>
+</div>
+</div>
+<div class="ImageCol Dryfish">
+<div class="portfolioContent">
+<img class="img" src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\dryfish4.jpg" />
+<h3><br>Dried Bombay Duck</h3>
+<p> Dry Bombay Duck 50 gms ( NEAT & CLEAN PACK )<br><br>
+  MRP:Rs 100.00</p><br>
+<button class="btn1 buy" type="button"> Add to cart </button>
+</div>
+</div>
+</div>
+<!--------footer------>
+ <div class="footer">
+    <div class="container">
+	   <div class="row">
+	     <div class="footer-col-1">
+		 <h3> Download Our App</h3>
+		 <p>download app for android mobile phone</p>
+		 <div class="app-logo">
+		    <img src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\applogo2.png">
+			<img src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\applogo1.png">
+	     </div>
+		 </div>
+	     <div class="footer-col-2">
+		   <img src="C:\Users\silve\OneDrive\Documents\Princy Project\IT project\image\logo1.jpg">
+		 <p>India's No. 1 in Fresh 
+		  & Natural Fish and Meat. <br>Delicious & 0% Chemical. 
+		  Order Online Now. <br> Loin-cuts, Cubes, Fillets, 
+		  Cleaned, Curry-cut, Whole</p>
+		 </div>
+		 <div class="footer-col-3">
+		    <h3> Useful links</h3>
+			<ul>
+			<li>Why freshfish?</li>
+            <li>Refer and Earn</li>
+            <li>Careers</li>
+            <li>BLOG</li>
+			</ul>
+		 </div>
+		
+		 <div class="footer-col-4">
+		    <h3> Follow us on</h3>
+			<ul>
+			<li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter </li>
+            <li>Youtube</li>
+			</ul>
+		 </div>
+	   </div>
+	   <hr>
+	   <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i></p> copyright 2020 - Shop Fresh fish</p>
+	  </div>
+	   
+	</div>
+ </div>
+ 
+</body>
+</HTML>

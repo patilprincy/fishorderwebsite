@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<meta charset ="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>online fish order and delivery system </title>
+	<link rel="stylesheet" type="text/css"  href="home.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar{
+	display: flex ;
+	align-items: center;
+	padding: 10px;
+}
+body{
+padding: 10px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right:20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+h1 {
+   font-size: 50px;
+   text-align: center;
+   font-family: monospace, serif, sans-serif;
+}
+body {
+   background-color: #f1f1f1;
+   padding: 20px;
+   font-family: Arial;
+}
+main {
+   max-width: 1000px;
+   margin: auto;
+}
+.img {
+   width: 100%;
+   cursor: pointer;
+   
+}
+.portfolioContainer {
+   margin: 8px -16px;
+}
+.portfolioContainer,
+.portfolioContainer > .ImageCol {
+   padding: 8px;
+}
+.ImageCol {
+   float: left;
+   width: 25%;
+}
+.portfolioContainer:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+.portfolioContent {
+   background-color: white;
+   padding: 10px;
+}
+@media screen and (max-width: 900px) {
+.ImageCol {
+   width: 50%;
+}
+}
+@media screen and (max-width: 600px) {
+.ImageCol {
+   width: 100%;
+}
+}
+.portfolioContent{
+	transform: transform 0.5s;
+	}
+.portfolioContent:hover{
+	transform: translateY(-7px);
+}
+.Products{
+  display:block;
+color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+section ul{
+display: flex;
+margin-bottom: 10px;
+}
+section ul li{
+list-style: none;
+background: #eee;
+padding:8px 20px;
+margin: 5px;
+letter-spacing: 1px;
+cursor: pointer;
+}
+section ul li.active{
+background: #03a9f4;
+color: #fff;
+}
+/* The "show" class is added to the filtered elements */
+.Products {
+  display: block;
+}
+/* Style the buttons */
+.list {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  color:black;
+}
+
+.list:hover {
+  background-color: #fe7250;
+}
+
+.list.active {
+  background-color: #666;
+  color: white;
+}
+.add:link, .add:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #fe7250;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.add:hover, .add:active {
+  background-color: #fe7250;
+  color: white;
+  
+}
+.product-container{
+	max-width:650px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.product-header{
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid #fe7250 ;
+	margin: auto;
+}
+.product-title{
+	width: 45%;
+
+}
+.price{
+	width: 15%;
+	
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.total{
+	width: 15%;
+	
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.quantity{
+	width: 30%;
+	justify-content: space-around;
+	align-items: center;
+}
+.products{
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #fe7250;
+}
+</style>
+
+<body>
+<div class="header">
+  <div class="container">
+		
+		<div class="navbar">
+			<div class="logo">
+		  <img src="image\logo1.jpg" width="125px">
+		 
+			</div>
+			<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="login.php">Account</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+			<li class="cart">
+			<a href="cart.php">
+			<i class="fa fa-shopping-basket" aria-hidden="true"></i> Cart<span></span>
+			</a></li>
+			</ul>
+			</nav>
+			</div>
+		</div>
+      </div>
+     </div>
+   </div>
+   <!---cart-->
+   <div class="product-container">
+	   <div class="product-header">
+		   <h3 class="product-title">Products</h3>
+		   <h3 class="price">Price</h3>
+		   <h3 class="quantity">Quantity</h3>
+		   <h3 class="total">Total</h3>
+	   </div>
+	   <div class="products">
+
+	   </div>
+   </div>
+
+   <!--------footer------>
+ <div class="footer">
+    <div class="container">
+	   <div class="row">
+	     <div class="footer-col-1">
+		 <h3> Download Our App</h3>
+		 <p>download app for android mobile phone</p>
+		 <div class="app-logo">
+		    <img src="image\applogo2.png">
+			<img src="image\applogo1.png">
+	     </div>
+		 </div>
+	     <div class="footer-col-2">
+		   <img src="image\logo1.jpg">
+		 <p>India's No. 1 in Fresh 
+		  & Natural Fish and Meat. <br>Delicious & 0% Chemical. 
+		  Order Online Now. <br> Loin-cuts, Cubes, Fillets, 
+		  Cleaned, Curry-cut, Whole</p>
+		 </div>
+		 <div class="footer-col-3">
+		    <h3> Useful links</h3>
+			<ul>
+			<li>Why freshfish?</li>
+            <li>Refer and Earn</li>
+            <li>Careers</li>
+            <li>BLOG</li>
+			</ul>
+		 </div>
+		
+		 <div class="footer-col-4">
+		    <h3> Follow us on</h3>
+			<ul>
+			<li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter </li>
+            <li>Youtube</li>
+			</ul>
+		 </div>
+	   </div>
+	   <hr>
+	   <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i></p> copyright 2020 - Shop Fresh fish</p>
+	  </div>
+	   
+	</div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <script type="text/javascript" src="main.js"></script> 
+</body>
+</HTML>

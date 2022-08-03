@@ -1,0 +1,277 @@
+<HTML lang="en">
+	<head>
+		<meta charset ="UTF-8">
+		<title>online fish order and delivery system </title>
+		<link rel="stylesheet" href="home.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<style>
+	.contact{
+		color: white;
+	}
+	*{
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family:  'Poppins', sans-serif;
+	}
+	
+	.contact{
+		position: relative;
+		min-height: 100vh;
+		padding: 50px 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.contact .concontent{
+		max-width:  800px;
+		text-align: center;
+		
+	}
+	.contact .concontent h2{
+		font-size: 36px;
+		font-weight: 500;
+		color: #fff;
+		
+
+	}
+	p{
+		color: #fff;
+	}
+	.contact .concontent p{
+		
+		font-weight: 500;
+		color: rgb(255, 255, 255);
+		 
+	}
+	.concontainer{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top:  30px;
+	}
+	.concontainer .contactinfo{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+	.concontainer .contactinfo .box{
+		position: relative;
+		padding: 20px 0;
+		display: flex;
+	}
+	.concontainer .contactinfo .box .icon{
+		min-width: 60px;
+		height: 60px;
+		background: #ff523b;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 60%;
+		font-size: 22px;
+	}
+	.concontainer .contactinfo .box .text{
+		display: flex;
+		margin-left: 20px;
+		font-size: 16px;
+		color :#fff;
+		flex-direction: column;
+		font-weight: 300;
+	}
+	.concontainer .contactinfo .box .text h3{
+		font-weight: 500;
+		color: #ff523b;
+	}
+	.contactfrom{
+		width: 40%;
+		padding: 40px;
+		background: white;
+	}
+	.contactfrom h2{
+		font-size: 30px;
+		color:#ff523b;
+		font-weight: 500;
+	}
+	.contactfrom .inputbox{
+		position: relative;
+		width: 100%;
+		margin-top: 10px;
+	}
+	
+	.contactfrom .inputbox input,
+	.contactfrom .inputbox textarea{
+		width: 100%;
+		padding: 10px 0;
+		font-size: 10px;
+		margin: 5px 0;
+		border: none;
+		border-bottom:  2px solid #333;
+		outline: none;
+		resize: none;
+
+	}
+	.contactfrom .inputbox spam{
+		position: absolute;
+		left: 0;
+		padding: 5px 0;
+		font-size: 16px;
+		margin: 10px 0;
+		pointer-events: none;
+		transition: 0.5s;
+		color: #ff523b ;
+	}
+	.contactfrom .inputbox input:focus ~ spam{
+		color: #e91e63;
+		font-size: 12px;
+		transform: translate(-20px);
+	}
+	.btn{
+		color: black;
+	}
+	
+
+	
+
+	</style>
+</head>
+	<body onload="slider()">
+	<div class="header">
+	  <div class="container">
+			<div class=" banner">
+			 <div class="slider">
+			 <img src="image\bg2.jpg" id="slideImg">
+			</div>
+			<div class="overlay">
+			<div class="navbar">
+				<div class="logo">
+			  <img src="image\logo1.jpg" width="125px">
+			 
+				</div>
+				<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="login.htmml">Account</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+				</ul>
+				</nav>
+				<img src="image\cart.png" width="30px" height="30px">
+				</div>
+				<div class="contact">
+					<div class="concontent">
+						<h2>Contact Us</h2>
+						
+					</div>
+					<div class="concontainer">
+					<div class="contactinfo">
+						<div class="box">
+							<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+							<div class="text">
+								<h3>Email Address</h3>
+								<p>fishorderanddelivery2122@gmail.com
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="text">
+								<h3>Phone</h3>
+								<p>9076-2345-2234
+								</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+							<div class="text">
+								<h3>Address</h3>
+								<p>Fish order and delivery Co.,Ltd,<br>
+								    4671 sugar camp road,<br>
+									Mumbai 245343,
+								</p>
+							</div>
+						</div>
+				
+				</div>
+				<div class="contactfrom">
+					<form>
+						<h2>Send Message</h2>
+						<div class="inputbox">
+						    <input type="text" name=""  placeholder="Enter your Full Name" required>
+						    <span> </span>
+						</div>
+						<div class="inputbox">
+						    <input type="text" name="" placeholder="Enter your Email" required>
+						    <span> </span>
+						</div>
+						<div class="inputbox">
+						    <textarea placeholder="Enter your message..." required></textarea>
+						    <span> </span>
+						</div>
+						<div class="inputbox" ">
+							<input type="button" class="btn" value="Send &#10147;"> 
+						    
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		  </div>
+		 </div>
+	   </div><br><br>
+	     <!--------footer------>
+ <div class="footer">
+    <div class="container">
+	   <div class="row">
+	     <div class="footer-col-1">
+		 <h3> Download Our App</h3>
+		 <p>download app for android mobile phone</p>
+		 <div class="app-logo">
+		    <img src="image\applogo2.png">
+			<img src="image\applogo1.png">
+	     </div>
+		 </div>
+	     <div class="footer-col-2">
+		   <img src="image\logo1.jpg">
+		 <p>India's No. 1 in Fresh 
+		  & Natural Fish and Meat. <br>Delicious & 0% Chemical. 
+		  Order Online Now. <br> Loin-cuts, Cubes, Fillets, 
+		  Cleaned, Curry-cut, Whole</p>
+		 </div>
+		 <div class="footer-col-3">
+		    <h3> Useful links</h3>
+			<ul>
+			<li>Why freshfish?</li>
+            <li>Refer and Earn</li>
+            <li>Careers</li>
+            <li>BLOG</li>
+			</ul>
+		 </div>
+		
+		 <div class="footer-col-4">
+		    <h3> Follow us on</h3>
+			<ul>
+			<li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter </li>
+            <li>Youtube</li>
+			</ul>
+		 </div>
+	   </div>
+	   <hr>
+	   <p class="copyright">&#169; copyright 2020 - Shop Fresh fish</p>
+	  </div>
+	   
+	</div>
+ </div>
+      
+</body>
+</HTML>
